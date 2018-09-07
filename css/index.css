@@ -118,11 +118,18 @@ input[type=submit]:hover {
 .topnav .icon {
     display: none;
 } 
+.header .icon {
+    display: none;
+} 
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
+    float: right;
+    display: block;
+  }
+    .header a.icon {
     float: right;
     display: block;
   }
@@ -156,6 +163,10 @@ input[type=submit]:hover {
 .imgleft {
   float: left;
   height: 100px;
+}
+.imgright {
+  float: right;
+  height: 25px;
 }
 
 @media screen and (max-width: 600px) {

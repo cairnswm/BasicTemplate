@@ -2,15 +2,19 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/index.css">
+<title>Basic Template</title>
 </head>
 <body>
 
-<div class="header">
+<div class="header" id="header">
   <img class="imgleft" src="images/logo.png">
+  <a href="javascript:void(0);" id="menuicon" class="icon" onclick="ToggleMenu()">
+    <img class="imgright" src="images/menu.png"/>
+  </a>
   <h1 id="title">Header</h1>
   <p id="punchline">Punch Line!</p>
+
 </div> 
 
 
@@ -19,9 +23,6 @@
   <a href="#" id="menunews" onclick="showPage('news');" class="menuoption">News</a>
   <a href="#" id="menucontact" onclick="showPage('contact');" class="menuoption">Contact</a>
   <a href="#" id="menuabout"  onclick="showPage('about');" class="menuoption">About</a>
-  <a href="javascript:void(0);" class="icon" onclick="ToggleMenu()">
-    <i class="fa fa-bars"></i>
-  </a>
 </div> 
 
 <div class="container">
@@ -94,7 +95,7 @@
 	</div>
 
 </div>
-
+<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
 <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
 <script src="js/index.js" type="text/javascript"></script>
 </body>
